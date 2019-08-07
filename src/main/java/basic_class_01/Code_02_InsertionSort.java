@@ -1,11 +1,9 @@
 package basic_class_01;
 
-import util.ArithmeticUtil;
+import util.ArrayUtil;
 
-import java.util.Arrays;
-
-import static util.ArithmeticUtil.*;
-import static util.ArithmeticUtil.isEqual;
+import static util.ArrayUtil.*;
+import static util.ArrayUtil.isEqual;
 
 /**
  * @Author: fangju
@@ -23,10 +21,10 @@ public class Code_02_InsertionSort {
             int[] array2 = arrayCopy(array1);
             int[] array3 = arrayCopy(array1);
             insertionSort(array1);
-            rightResult(array2);
+            rightMethod(array2);
             if (!isEqual(array1, array2)) {
                 isSucceed = false;
-                ArithmeticUtil.printCompareResult(array3,array1,array2);
+                ArrayUtil.printCompareResult(array3,array1,array2);
                 break;
             }
         }

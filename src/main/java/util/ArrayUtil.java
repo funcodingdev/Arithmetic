@@ -3,16 +3,16 @@ package util;
 import java.util.Arrays;
 
 /**
- * @Author: fangju
+ * @Author: FangJu
  * @Date: 2019/8/4
  */
-public class ArithmeticUtil {
+public class ArrayUtil {
     /**
      * 2.实现一个绝对正确的方法
      *
-     * @param arr
+     * @param arr 随机生成的数组
      */
-    public static void rightResult(int[] arr) {
+    public static void rightMethod(int[] arr) {
         Arrays.sort(arr);
     }
 
@@ -35,8 +35,8 @@ public class ArithmeticUtil {
     /**
      * 数组拷贝
      *
-     * @param arr
-     * @return
+     * @param arr 待拷贝的数组
+     * @return 新数组
      */
     public static int[] arrayCopy(int[] arr) {
         int[] newArr = new int[arr.length];
@@ -47,9 +47,9 @@ public class ArithmeticUtil {
     /**
      * 数组比较
      *
-     * @param arr1
-     * @param arr2
-     * @return
+     * @param arr1 数组1
+     * @param arr2 数组2
+     * @return true/false
      */
     public static boolean isEqual(int[] arr1, int[] arr2) {
         if ((arr1 == null && arr2 != null) || (arr1 != null && arr2 == null)) {
@@ -71,8 +71,9 @@ public class ArithmeticUtil {
 
     /**
      * 打印排序结果
-     * @param sortArray
-     * @param rightArray
+     * @param newArray 随机生成的数组
+     * @param sortArray 排序后的数组
+     * @param rightArray 正确结果
      */
     public static void printCompareResult(int[] newArray,int[] sortArray, int[] rightArray){
         System.out.println("生成结果="+Arrays.toString(newArray));
